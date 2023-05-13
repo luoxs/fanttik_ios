@@ -16,12 +16,12 @@
 		45FF699C2A0E188C008478EC /* ShopViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 45FF699B2A0E188C008478EC /* ShopViewController.m */; };
 		45FF699F2A0E18C8008478EC /* DeviceViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 45FF699E2A0E18C8008478EC /* DeviceViewController.m */; };
 		45FF69A22A0E18EA008478EC /* MineViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 45FF69A12A0E18EA008478EC /* MineViewController.m */; };
-		45FF69A82A0E19A7008478EC /* MainTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 45FF69A72A0E19A7008478EC /* MainTableViewController.m */; };
 		45FF69AC2A0E218C008478EC /* amazone@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 45FF69AB2A0E218C008478EC /* amazone@3x.png */; };
 		45FF69AE2A0E219A008478EC /* fanttic@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 45FF69AD2A0E219A008478EC /* fanttic@3x.png */; };
 		45FF69B02A0E21AF008478EC /* icon_Mine@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 45FF69AF2A0E21AF008478EC /* icon_Mine@3x.png */; };
 		45FF69B22A0E21C5008478EC /* icon_shop@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 45FF69B12A0E21C5008478EC /* icon_shop@3x.png */; };
 		45FF69B42A0E21EA008478EC /* icon_Devices@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 45FF69B32A0E21EA008478EC /* icon_Devices@3x.png */; };
+		45FF69BA2A0F34EE008478EC /* MainTabBarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 45FF69B92A0F34EE008478EC /* MainTabBarViewController.m */; };
 		506BB3AE5513C4354A236A9A /* libPods-fanttik.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 121B3E2492AC626824874FC9 /* libPods-fanttik.a */; };
 /* End PBXBuildFile section */
 
@@ -43,13 +43,13 @@
 		45FF699E2A0E18C8008478EC /* DeviceViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DeviceViewController.m; sourceTree = "<group>"; };
 		45FF69A02A0E18EA008478EC /* MineViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MineViewController.h; sourceTree = "<group>"; };
 		45FF69A12A0E18EA008478EC /* MineViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MineViewController.m; sourceTree = "<group>"; };
-		45FF69A62A0E19A7008478EC /* MainTableViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MainTableViewController.h; sourceTree = "<group>"; };
-		45FF69A72A0E19A7008478EC /* MainTableViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MainTableViewController.m; sourceTree = "<group>"; };
 		45FF69AB2A0E218C008478EC /* amazone@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "amazone@3x.png"; path = "Resource/Home/amazone@3x.png"; sourceTree = SOURCE_ROOT; };
 		45FF69AD2A0E219A008478EC /* fanttic@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "fanttic@3x.png"; path = "Resource/Home/fanttic@3x.png"; sourceTree = SOURCE_ROOT; };
 		45FF69AF2A0E21AF008478EC /* icon_Mine@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "icon_Mine@3x.png"; path = "Resource/Home/icon_Mine@3x.png"; sourceTree = SOURCE_ROOT; };
 		45FF69B12A0E21C5008478EC /* icon_shop@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "icon_shop@3x.png"; path = "Resource/Home/icon_shop@3x.png"; sourceTree = SOURCE_ROOT; };
 		45FF69B32A0E21EA008478EC /* icon_Devices@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "icon_Devices@3x.png"; path = "Resource/Home/icon_Devices@3x.png"; sourceTree = SOURCE_ROOT; };
+		45FF69B82A0F34EE008478EC /* MainTabBarViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainTabBarViewController.h; sourceTree = "<group>"; };
+		45FF69B92A0F34EE008478EC /* MainTabBarViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainTabBarViewController.m; sourceTree = "<group>"; };
 		C7ECB66928C186D2E1B1D39A /* Pods-fanttik.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-fanttik.release.xcconfig"; path = "Target Support Files/Pods-fanttik/Pods-fanttik.release.xcconfig"; sourceTree = "<group>"; };
 		DB5CD52E88D7E946A55353DA /* Pods-fanttik.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-fanttik.debug.xcconfig"; path = "Target Support Files/Pods-fanttik/Pods-fanttik.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -88,8 +88,8 @@
 		45FF697C2A08E2E4008478EC /* fanttik */ = {
 			isa = PBXGroup;
 			children = (
-				45FF69A62A0E19A7008478EC /* MainTableViewController.h */,
-				45FF69A72A0E19A7008478EC /* MainTableViewController.m */,
+				45FF69B82A0F34EE008478EC /* MainTabBarViewController.h */,
+				45FF69B92A0F34EE008478EC /* MainTabBarViewController.m */,
 				45FF699A2A0E188C008478EC /* ShopViewController.h */,
 				45FF699B2A0E188C008478EC /* ShopViewController.m */,
 				45FF699D2A0E18C8008478EC /* DeviceViewController.h */,
@@ -247,7 +247,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				45FF69A82A0E19A7008478EC /* MainTableViewController.m in Sources */,
+				45FF69BA2A0F34EE008478EC /* MainTabBarViewController.m in Sources */,
 				45FF69A22A0E18EA008478EC /* MineViewController.m in Sources */,
 				45FF697F2A08E2E4008478EC /* AppDelegate.m in Sources */,
 				45FF69902A08E2EC008478EC /* main.m in Sources */,
