@@ -1,24 +1,137 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="298-6C-e3O">
+    <device id="retina3_5" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Image references" minToolsVersion="12.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Device-->
+        <scene sceneID="ETD-C8-T6t">
+            <objects>
+                <viewController id="VCo-8S-sbL" customClass="DeviceViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="CCH-hH-Uak">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="tb0-VH-wD4"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Device" image="icon_Devices.png" id="uwo-mo-Ztp">
+                        <imageReference key="selectedImage" image="icon_Devices.png" symbolScale="large"/>
+                    </tabBarItem>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="B81-YI-ohT" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1726" y="579"/>
+        </scene>
+        <!--Shop-->
+        <scene sceneID="MN7-LQ-xSZ">
+            <objects>
+                <viewController title="Shop" interfaceStyle="light" id="4J5-h2-Gl5" customClass="ShopViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="gJC-54-a5E">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Fantitik Shop" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GZz-kT-Yml">
+                                <rect key="frame" x="67.5" y="40" width="200" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="200" id="8rj-hL-0S9"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="25"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XZc-lc-hud">
+                                <rect key="frame" x="67" y="324" width="186" height="144"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="XZc-lc-hud" secondAttribute="height" multiplier="173:134" id="4ZE-OH-uuZ"/>
+                                </constraints>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" image="fanttic.png"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nak-bf-hry">
+                                <rect key="frame" x="67.5" y="110" width="185" height="144"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="nak-bf-hry" secondAttribute="height" multiplier="346:269" id="dIU-GZ-LFd"/>
+                                </constraints>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" title="" image="amazone.png"/>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="IK6-KJ-qGb"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="XZc-lc-hud" firstAttribute="height" secondItem="gJC-54-a5E" secondAttribute="height" multiplier="0.3" id="19C-Az-ugt"/>
+                            <constraint firstItem="nak-bf-hry" firstAttribute="height" secondItem="XZc-lc-hud" secondAttribute="height" id="8DZ-cG-uvb"/>
+                            <constraint firstItem="IK6-KJ-qGb" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="GZz-kT-Yml" secondAttribute="trailing" symbolic="YES" id="D1z-S5-UQk"/>
+                            <constraint firstItem="nak-bf-hry" firstAttribute="top" secondItem="GZz-kT-Yml" secondAttribute="bottom" constant="40" id="Es8-Hh-ObI"/>
+                            <constraint firstItem="XZc-lc-hud" firstAttribute="top" secondItem="nak-bf-hry" secondAttribute="bottom" constant="70" id="FaS-2h-uHP"/>
+                            <constraint firstItem="XZc-lc-hud" firstAttribute="centerX" secondItem="IK6-KJ-qGb" secondAttribute="centerX" id="a23-Ia-IiG"/>
+                            <constraint firstItem="GZz-kT-Yml" firstAttribute="top" secondItem="IK6-KJ-qGb" secondAttribute="top" constant="40" id="cNk-ed-rwJ"/>
+                            <constraint firstItem="GZz-kT-Yml" firstAttribute="leading" secondItem="nak-bf-hry" secondAttribute="leading" id="jfd-Ww-lI6"/>
+                            <constraint firstItem="nak-bf-hry" firstAttribute="centerX" secondItem="IK6-KJ-qGb" secondAttribute="centerX" id="m0O-DZ-odH"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Shop" image="icon_shop.png" id="fAu-YL-TPV">
+                        <imageReference key="selectedImage" image="icon_shop.png" symbolScale="large"/>
+                    </tabBarItem>
+                    <nil key="simulatedTopBarMetrics"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="M8F-8r-20N" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1726.0869565217392" y="-86.383928571428569"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="l1J-u8-qb7">
+            <objects>
+                <tabBarController id="298-6C-e3O" sceneMemberID="viewController">
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="VLf-5Q-WM0">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <tabBarAppearance key="scrollEdgeAppearance"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="4J5-h2-Gl5" kind="relationship" relationship="viewControllers" id="l2B-Cp-kqr"/>
+                        <segue destination="VCo-8S-sbL" kind="relationship" relationship="viewControllers" id="eJ2-u4-pXe"/>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="viewControllers" id="d06-6T-lNr"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Djw-FO-yFT" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-2729" y="561"/>
+        </scene>
+        <!--Mine-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="MineViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" xcode11CocoaTouchSystemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
+                    <tabBarItem key="tabBarItem" title="Mine" image="icon_Mine.png" id="Nwk-Kn-2iw">
+                        <imageReference key="selectedImage" image="icon_Mine.png" symbolScale="large"/>
+                    </tabBarItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="-1726" y="1298"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="amazone.png" width="346" height="270"/>
+        <image name="fanttic.png" width="346" height="270"/>
+        <image name="icon_Devices.png" width="30" height="30"/>
+        <image name="icon_Mine.png" width="30" height="30"/>
+        <image name="icon_shop.png" width="30" height="30"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
 </document>
